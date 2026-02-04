@@ -33,3 +33,9 @@ bitcoin = bitcoin.to_f
 # Sample output:
 # puts "1 Bitcoin is valued at $41405.1046 USD."
 # puts "Your Bitcoin is worth $62107.6569."
+
+usd_rate = bitcoin_data["USD"]["last"]
+usd_value = usd_rate * bitcoin
+
+puts "1 Bitcoin is valued at $#{usd_rate} USD."
+puts "Your Bitcoin is worth $#{usd_value}."

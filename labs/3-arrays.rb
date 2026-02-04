@@ -15,3 +15,19 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+
+my_list = ["milk", "eggs", "bacon", "steak"]
+friends_list = ["beer", "cookies", "apples", "steak"]
+
+shared_list = my_list + friends_list
+sorted_list = shared_list.sort
+sorted_unique_list = sorted_list.uniq
+
+puts "buy #{sorted_unique_list[0]}" # buy milk
+puts "buy #{sorted_unique_list[1]}" # buy eggs
+puts "buy #{sorted_unique_list[2]}" # buy bacon
+puts "buy #{sorted_unique_list[3]}" # buy steak
+puts "buy #{sorted_unique_list[4]}" # buy beer
+puts "buy #{sorted_unique_list[5]}" # buy cookies
+puts "buy #{sorted_unique_list[6]}" # buy apples
